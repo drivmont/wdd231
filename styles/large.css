@@ -1,0 +1,24 @@
+.nav-toggle {
+  display: none;
+}
+
+.primary-nav {
+  display: block;
+}
+
+.primary-nav ul {
+  flex-direction: row;
+}
+
+.primary-nav a {
+  text-align: center;
+  border-bottom: 3px solid transparent;
+}
+
+.content-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+.filter-btn {
+  flex: 1 1 120px;
+}

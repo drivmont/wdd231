@@ -1,31 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   color: #222222;
   background-color: #ffffff;
   line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
 }
 
 /* header */
@@ -56,7 +34,7 @@ a {
 }
 
 .nav-toggle {
-  display: none;
+  display: block;
   background-color: #1b3a4b;
   border: none;
   width: 40px;
@@ -97,6 +75,11 @@ a {
   width: 100%;
   background-color: #1b3a4b;
   order: 3;
+  display: none;
+}
+
+.primary-nav.is-open {
+  display: block;
 }
 
 .primary-nav ul {
@@ -104,16 +87,16 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
 }
 
 .primary-nav a {
   display: block;
   color: #ffffff;
   padding: 0.9rem 1rem;
-  text-align: center;
-  flex: 1;
+  text-align: left;
   font-weight: 600;
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid #26536b;
 }
 
 .primary-nav a:hover {
@@ -138,7 +121,7 @@ main > h1 {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -178,7 +161,6 @@ main > h1 {
   object-fit: cover;
 }
 
-
 /* courses */
 
 .course-filters {
@@ -189,7 +171,7 @@ main > h1 {
 }
 
 .filter-btn {
-  flex: 1 1 120px;
+  flex: 1 1 100%;
   background-color: #ffffff;
   border: 1px solid #999999;
   padding: 0.6rem;
@@ -285,37 +267,4 @@ main > h1 {
   margin: 0;
   font-size: 0.8rem;
   color: #555555;
-}
-
-/* small screens */
-
-@media (max-width: 700px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .primary-nav {
-    display: none;
-  }
-
-  .primary-nav.is-open {
-    display: block;
-  }
-
-  .primary-nav ul {
-    flex-direction: column;
-  }
-
-  .primary-nav a {
-    text-align: left;
-    border-bottom: 1px solid #26536b;
-  }
-
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .filter-btn {
-    flex: 1 1 100%;
-  }
 }
