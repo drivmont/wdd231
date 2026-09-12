@@ -16,12 +16,4 @@
     text-align: center;
     border-bottom: 3px solid transparent;
   }
-
-  .content-grid {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .filter-btn {
-    flex: 1 1 120px;
-  }
 }
