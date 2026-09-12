@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Directory</title>
+  <meta name="description" content="Directory page for the Chamber of Commerce page.">
+  <meta name="author" content="Santa Cruz Chamber of Commerce.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="Chamber of Commerce - Directory">
+  <meta property="og:description" content="Browse the member directory for Chamber of Commerce web development project.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/images/student-photo.jpg">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 700px)">
+
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="branding">
+      <img src="images/logo.svg" alt="" class="logo">
+      <span class="site-name">Diego Rivera</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <span class="hamburger-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="future-link"><span>About</span></li>
+        <li class="future-link"><span>Podcast</span></li>
+        <li class="future-link"><span>Events</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Directory</h1>
+
+    <div class="view-toggle">
+        <button id="gridBtn" class="is-active">Grid</button>
+        <button id="listBtn">List</button>
+    </div>
+    <ul id="directoryList" class="member-list grid-view"></ul>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+        <p><strong>Santa Cruz Chamber of Commerce</strong></p>
+        <p>123 Main Street</p>
+        <p>Santa Cruz, Bolivia</p>
+        <p>info@santacruzchamber.com</p>
+        <p>(831) 555-5555</p>
+    </div>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+          <img src="images/icon-linkedin.svg" alt="" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com" aria-label="GitHub profile" target="_blank" rel="noopener">
+          <img src="images/icon-github.svg" alt="" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com" aria-label="X profile" target="_blank" rel="noopener">
+          <img src="images/icon-x.svg" alt="" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-meta">
+        <p>WDD 231 Class Project</p>
+        <p>Diego Rivera, Santa Cruz, Bolivia</p>
+        <p class="copyright">&copy; <span id="currentyear"></span> Santa Cruz Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

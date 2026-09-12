@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Los Tajibos Hotel",
+    "address": "Av. San Martín #455, Barrio Equipetrol, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 3342-1000",
+    "website": "https://www.lostajiboshotel.com",
+    "image": "images/members/los-tajibos.jpg",
+    "membership": 3,
+    "industry": "Hospitality & Events",
+    "description": "Five-star hotel and convention center in the Equipetrol district, a hub for business travelers and international conferences."
+  },
+  {
+    "name": "COTAS",
+    "address": "Calle Bolívar #154, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 3333-8000",
+    "website": "https://cotas.com",
+    "image": "images/members/cotas.jpg",
+    "membership": 3,
+    "industry": "Telecommunications",
+    "description": "Local cooperative providing home internet, cable TV, and telephony services across Santa Cruz."
+  },
+  {
+    "name": "Fexpocruz",
+    "address": "Av. Roca y Coronado, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 75385666",
+    "website": "https://www.fexpocruz.com.bo",
+    "image": "images/members/fexpocruz.jpg",
+    "membership": 2,
+    "industry": "Trade Fairs & Exhibitions",
+    "description": "Organizer of Expocruz, Bolivia's largest international trade fair, and operator of the Fexpocruz convention grounds."
+  },
+  {
+    "name": "UAGRM",
+    "address": "Campus Universitario, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 3336-5533",
+    "website": "https://www.uagrm.edu.bo",
+    "image": "images/members/uagrm.jpg",
+    "membership": 1,
+    "industry": "Higher Education",
+    "description": "The largest public university in the Santa Cruz department, serving students across 18 faculties."
+  },
+  {
+    "name": "La Casa del Camba",
+    "address": "Av. Cristóbal de Mendoza #1365, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 76003875",
+    "website": "https://www.casadelcamba.com",
+    "image": "images/members/casa-del-camba.jpg",
+    "membership": 1,
+    "industry": "Restaurant",
+    "description": "Traditional Camba cuisine and live música cruceña in a rustic, open-air setting."
+  },
+  {
+    "name": "Hipermaxi",
+    "address": "Av. Roca y Coronado (Sucursal Central), Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 76311374",
+    "website": "https://www.hipermaxi.com",
+    "image": "images/members/hipermaxi.jpg",
+    "membership": 2,
+    "industry": "Retail & Supermarkets",
+    "description": "Regional supermarket chain with branches across Santa Cruz, known for home delivery and in-store pharmacies."
+  },
+  {
+    "name": "Amaszonas Línea Aérea",
+    "address": "Aeropuerto El Trompillo, Oficina #11, Santa Cruz de la Sierra, Bolivia",
+    "phone": "+591 71657895",
+    "website": "https://www.amaszonas.com",
+    "image": "images/members/amaszonas.jpg",
+    "membership": 2,
+    "industry": "Airline",
+    "description": "Regional airline connecting Santa Cruz to destinations across Bolivia and neighboring countries."
+  }
+]
