@@ -14,6 +14,6 @@
   .primary-nav a,
   .primary-nav .future-link > span {
     text-align: center;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid #0000;
   }
 }

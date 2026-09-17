@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       card.innerHTML =
         '<h3>' + m.name + '</h3>' +
         '<p class="tagline">' + m.industry + '</p>' +
-        '<img src="' + m.image + '" alt="' + m.name + ' logo">' +
+        '<img src="' + m.image + '" alt="' + m.name + ' logo" width="300" height="160">' +
         '<p class="membership-badge level-' + m.membership + '">' + (membershipLabels[m.membership] || "Member") + '</p>' +
         '<p>' + m.description + '</p>' +
         '<p><strong>ADDRESS:</strong> ' + m.address + '</p>' +

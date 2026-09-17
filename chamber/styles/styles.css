@@ -136,7 +136,7 @@ img {
 }
 
 .primary-nav .future-link > span {
-  color: #ffffff73;
+  color: #d9e4e0;
   cursor: default;
 }
 
@@ -239,6 +239,7 @@ main > h1 {
   margin: 0;
   padding: 0.3rem 1rem;
   font-size: 0.9rem;
+  overflow-wrap: break-word;
 }
 
 .member-card p:last-child {
@@ -297,16 +298,21 @@ main > h1 {
 }
 
 .member-list.list-view .member-card img {
-  width: 64px;
-  height: 64px;
-  order: -1;
-  border-radius: 4px;
+  display: none;
 }
 
 .member-list.list-view .member-card .tagline,
 .member-list.list-view .member-card p {
   padding: 0;
   flex: 1 1 auto;
+  overflow-wrap: break-word;
+  min-width: 0;
+}
+
+.member-list.list-view .member-card .membership-badge {
+  flex: 0 0 auto;
+  padding: 0.15rem 0.6rem;
+  margin: 0;
 }
 
 /* footer */
