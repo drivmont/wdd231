@@ -213,6 +213,7 @@ main > h1 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
   min-height: calc(1.3em * 2 + 1.2rem);
 }
@@ -289,6 +290,7 @@ main > h1 {
   padding: 0;
   flex: 1 1 160px;
   -webkit-line-clamp: unset;
+  line-clamp: unset;
   min-height: 0;
 }
 
