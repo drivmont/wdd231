@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,6 +23,5 @@ a {
   overflow: hidden;
   white-space: nowrap;
   clip-path: inset(50%);
-  color: #ffffff;
 }
 
