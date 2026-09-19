@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Home</title>
+  <meta name="description" content="Welcome to the Santa Cruz Chamber of Commerce! Discover local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santa Cruz Chamber of Commerce – Home">
+  <meta property="og:description" content="Welcome to the Santa Cruz Chamber of Commerce! Discover local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/home.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 700px)">
+
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="branding">
+      <img src="images/logo.svg" alt="Diego Rivera logo: a mountain peak inside a dark circle" class="logo" width="36" height="36">
+      <span class="site-name">Diego Rivera</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <span class="hamburger-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="future-link"><span>About</span></li>
+        <li class="future-link"><span>Podcast</span></li>
+        <li class="future-link"><span>Events</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Santa Cruz Chamber of Commerce</h1>
+    <section class="hero">
+        <img src="images/hero-santa-cruz.jpg" alt="Santa Cruz Chamber of Commerce building" class="hero-image" width="1600" height="600">
+        <a href="join.html" class="hero-cta">Join the Chamber</a>
+    </section>
+    <section class="events" aria-labelledby="events-heading">
+        <h2 id="events-heading">Current Events</h2>
+        <ul class="event-list">
+            <li class="event-card">
+                <h3>Annual Business Expo</h3>
+                <p>Date: July 15, 2024</p>
+                <p>Location: Santa Cruz Convention Center</p>
+                <p>Join us for our annual business expo featuring local businesses, networking opportunities, and keynote speakers.</p>
+            </li>
+            <li class="event-card">
+                <h3>Networking Breakfast</h3>
+                <p>Date: August 10, 2024</p>
+                <p>Location: Downtown Cafe</p>
+                <p>Start your day with a networking breakfast and connect with fellow chamber members and local business leaders.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Weather</h2>
+
+        <div class="weather-current">
+            <p class="weather-temp" id="currentTemp"></p>
+            <p class="weather-desc" id="currentDesc"></p>
+        </div>
+
+        <ul class="weather-forecast" id="forecastList">
+        </ul>
+    </section>
+    <section class="spotlights" aria-labelledby="spotlights-heading">
+        <h2 id="spotlights-heading">Member Spotlights</h2>
+        <ul class="spotlight-list" id="spotlightList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+        <p><strong>Santa Cruz Chamber of Commerce</strong></p>
+        <p>123 Main Street</p>
+        <p>Santa Cruz, Bolivia</p>
+        <p>info@santacruzchamber.com</p>
+        <p>(831) 555-5555</p>
+    </div>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com" aria-label="GitHub profile" target="_blank" rel="noopener">
+          <img src="images/icon-github.svg" alt="GitHub icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com" aria-label="X profile" target="_blank" rel="noopener">
+          <img src="images/icon-x.svg" alt="X (formerly Twitter) icon" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-meta">
+        <p>WDD 231 Class Project</p>
+        <p>Diego Rivera, Santa Cruz, Bolivia</p>
+        <p class="copyright">&copy; <span id="currentyear"></span> Santa Cruz Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

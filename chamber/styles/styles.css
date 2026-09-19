@@ -10,6 +10,162 @@
   --color-border: #d7ded9;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.hero-cta {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-accent);
+  color: #1c2733;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.hero-cta:hover {
+  background-color: var(--color-accent-light);
+}
+
+/* current events */
+
+.event-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+.event-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-primary);
+}
+
+.event-card p {
+  margin: 0.25rem 0;
+}
+
+/* weather */
+
+.weather-current {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.weather-temp {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.weather-desc {
+  margin: 0.25rem 0 0;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  color: var(--color-accent-light);
+}
+
+.weather-forecast {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.weather-forecast li {
+  flex: 1 1 140px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.weather-forecast h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+}
+
+.weather-forecast p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* member spotlights */
+
+.spotlight-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  flex: 1 1 220px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: var(--color-bg-alt);
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card h3 {
+  margin: 0 0 0.4rem;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+}
+
+.spotlight-card .membership-badge {
+  margin: 0 0 0.5rem;
+}
+
+.spotlight-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
 *,
 *::before,
 *::after {
@@ -150,6 +306,7 @@ main {
 
 main > h1 {
   margin-top: 0;
+  text-align: center;
 }
 
 /* directory: grid/list toggle buttons */
@@ -243,7 +400,7 @@ main > h1 {
   padding-bottom: 1rem;
 }
 
-.member-card .membership-badge {
+.membership-badge {
   display: inline-block;
   margin: 0.5rem 1rem 0;
   padding: 0.15rem 0.6rem;
@@ -254,19 +411,19 @@ main > h1 {
   width: fit-content;
 }
 
-.member-card .membership-badge.level-1 {
+.membership-badge.level-1 {
   background-color: var(--color-bg-alt);
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
-.member-card .membership-badge.level-2 {
+.membership-badge.level-2 {
   background-color: #e6e6e6;
   color: #444444;
   border: 1px solid #bbbbbb;
 }
 
-.member-card .membership-badge.level-3 {
+.membership-badge.level-3 {
   background-color: var(--color-accent);
   color: #4a3200;
   border: 1px solid var(--color-accent-light);
