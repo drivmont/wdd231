@@ -16,4 +16,12 @@
     text-align: center;
     border-bottom: 3px solid var(--color-transparent);
   }
+
+  /* join: form on the left, membership cards on the right */
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
 }

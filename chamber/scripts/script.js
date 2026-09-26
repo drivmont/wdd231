@@ -10,6 +10,38 @@ document.addEventListener("DOMContentLoaded", function () {
     navToggle.setAttribute("aria-expanded", isOpen);
   });
 
+  // --- Join page only (chamber/join.html): record when the form was loaded ---
+  const timestampField = document.getElementById("timestamp");
+  if (timestampField) {
+    timestampField.value = new Date().toISOString();
+  }
+
+  // --- Join page only (chamber/join.html): membership level modals ---
+  document.querySelectorAll("[data-modal]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.getElementById(button.dataset.modal).showModal();
+    });
+  });
+
+  document.querySelectorAll(".close-modal").forEach(function (button) {
+    button.addEventListener("click", function () {
+      button.closest("dialog").close();
+    });
+  });
+
+  // --- Thank-you page only (chamber/thankyou.html): show the submitted form data ---
+  const results = document.getElementById("results");
+  if (results) {
+    const params = new URLSearchParams(window.location.search);
+    results.querySelectorAll("[data-field]").forEach(function (field) {
+      let value = params.get(field.dataset.field) || "";
+      if (field.dataset.field === "timestamp" && value) {
+        value = new Date(value).toLocaleString();
+      }
+      field.textContent = value;
+    });
+  }
+
   // --- Directory page only (chamber/directory.html) ---
   if (document.getElementById("directoryList")) {
     const membershipLabels = {

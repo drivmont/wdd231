@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Thank You</title>
+  <meta name="description" content="Thank you for applying to the Santa Cruz Chamber of Commerce. Review the membership application details you submitted.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santa Cruz Chamber of Commerce – Thank You">
+  <meta property="og:description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/thankyou.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 700px)">
+
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="branding">
+      <img src="images/logo.svg" alt="Diego Rivera logo: a mountain peak inside a dark circle" class="logo" width="36" height="36">
+      <span class="site-name">Diego Rivera</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <span class="hamburger-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="future-link"><span>About</span></li>
+        <li class="future-link"><span>Podcast</span></li>
+        <li class="future-link"><span>Events</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Applying!</h1>
+    <section class="thankyou-info">
+        <p>We appreciate your interest in the Santa Cruz Chamber of Commerce. Our membership team will review your application and contact you within two business days.</p>
+        <div class="results-card">
+            <h2>Your Application Summary</h2>
+            <dl id="results">
+                <dt>First name</dt>
+                <dd data-field="firstName"></dd>
+                <dt>Last name</dt>
+                <dd data-field="lastName"></dd>
+                <dt>Email</dt>
+                <dd data-field="email"></dd>
+                <dt>Mobile phone</dt>
+                <dd data-field="phone"></dd>
+                <dt>Business name</dt>
+                <dd data-field="business"></dd>
+                <dt>Application date</dt>
+                <dd data-field="timestamp"></dd>
+            </dl>
+        </div>
+        <p class="thankyou-links"><a href="index.html">Return to the home page</a> or <a href="directory.html">browse the member directory</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+        <p><strong>Santa Cruz Chamber of Commerce</strong></p>
+        <p>123 Main Street</p>
+        <p>Santa Cruz, Bolivia</p>
+        <p>info@santacruzchamber.com</p>
+        <p>(831) 555-5555</p>
+    </div>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com" aria-label="GitHub profile" target="_blank" rel="noopener">
+          <img src="images/icon-github.svg" alt="GitHub icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com" aria-label="X profile" target="_blank" rel="noopener">
+          <img src="images/icon-x.svg" alt="X (formerly Twitter) icon" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-meta">
+        <p>WDD 231 Class Project</p>
+        <p>Diego Rivera, Santa Cruz, Bolivia</p>
+        <p class="copyright">&copy; <span id="currentyear"></span> Santa Cruz Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

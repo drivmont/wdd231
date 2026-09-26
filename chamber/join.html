@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce - Home</title>
+  <meta name="description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santa Cruz Chamber of Commerce – Join Page">
+  <meta property="og:description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/join.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 700px)">
+
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="branding">
+      <img src="images/logo.svg" alt="Diego Rivera logo: a mountain peak inside a dark circle" class="logo" width="36" height="36">
+      <span class="site-name">Diego Rivera</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-controls="primaryNav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <span class="hamburger-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="future-link"><span>About</span></li>
+        <li class="future-link"><span>Podcast</span></li>
+        <li class="future-link"><span>Events</span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Santa Cruz Chamber of Commerce</h1>
+    <section class="join-info">
+        <p>Joining the Santa Cruz Chamber of Commerce opens doors to a world of opportunities for your business. Connect with local businesses, gain access to exclusive events, and be part of a thriving community that supports growth and collaboration.</p>
+        <p>Membership benefits include:</p>
+        <ul>
+            <li>Networking opportunities with local businesses</li>
+            <li>Access to business resources and support</li>
+            <li>Promotion through our member directory</li>
+            <li>Invitations to exclusive events and workshops</li>
+        </ul>
+        <p>To become a member, please fill out the application form below or contact us for more information.</p>
+    </section>
+    <div class="join-layout">
+        <section class="form-area">
+            <form class="join-form" action="thankyou.html" method="get">
+                <label for="firstName">First name:
+                    <input type="text" id="firstName" name="firstName" required title="Enter your first name" autocomplete="given-name">
+                </label>
+
+                <label for="lastName">Last name:
+                    <input type="text" id="lastName" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                </label>
+
+                <label for="title">Title:
+                    <input type="text" id="title" name="title" title="Your title within your organization: letters, hyphens, and spaces only, at least 7 characters" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}">
+                </label>
+
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required title="Enter a valid email address" autocomplete="email" placeholder="name@example.com">
+                </label>
+
+                <label for="phone">Phone:
+                    <input type="tel" id="phone" name="phone" required title="Enter your mobile phone number" autocomplete="tel">
+                </label>
+
+                <label for="business">Business Name:
+                    <input type="text" id="business" name="business" required title="Enter your business or organization name" autocomplete="organization">
+                </label>
+
+                <label for="membership">Membership Level:
+                    <select id="membership" name="membership" required title="Select a membership level">
+                        <option value="">Select a level</option>
+                        <option value="np">Non-Profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+
+                <label for="description">Business Description:
+                    <textarea id="description" name="description" title="Describe your business or organization"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card">
+                <h3>Non Profit Membership Level</h3>
+                <button type="button" class="learn-more" data-modal="np-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership Level</h3>
+                <button type="button" class="learn-more" data-modal="bronze-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver Membership Level</h3>
+                <button type="button" class="learn-more" data-modal="silver-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold Membership Level</h3>
+                <button type="button" class="learn-more" data-modal="gold-modal">Learn More</button>
+            </div>
+        </section>
+    </div>
+
+    <dialog id="np-modal" class="membership-modal">
+        <div class="modal-header">
+            <h3>Non Profit Membership</h3>
+            <button type="button" class="close-modal" aria-label="Close">X</button>
+        </div>
+        <p><strong>Benefits include:</strong></p>
+        <ul>
+            <li>Listing in the member directory</li>
+            <li>Invitations to monthly networking events</li>
+        </ul>
+        <p><strong>Cost:</strong> Free</p>
+    </dialog>
+
+    <dialog id="bronze-modal" class="membership-modal">
+        <div class="modal-header">
+            <h3>Bronze Membership</h3>
+            <button type="button" class="close-modal" aria-label="Close">X</button>
+        </div>
+        <p><strong>Benefits include:</strong></p>
+        <ul>
+            <li>Listing in the member directory</li>
+            <li>Invitations to monthly networking events</li>
+            <li>Access to training workshops</li>
+            <li>10% discount on chamber events</li>
+        </ul>
+        <p><strong>Cost:</strong> $10 per month</p>
+    </dialog>
+
+    <dialog id="silver-modal" class="membership-modal">
+        <div class="modal-header">
+            <h3>Silver Membership</h3>
+            <button type="button" class="close-modal" aria-label="Close">X</button>
+        </div>
+        <p><strong>Benefits include:</strong></p>
+        <ul>
+            <li>Listing in the member directory</li>
+            <li>Invitations to monthly networking events</li>
+            <li>Access to training workshops</li>
+            <li>Advertising in the chamber newsletter</li>
+            <li>20% discount on chamber events</li>
+        </ul>
+        <p><strong>Cost:</strong> $20 per month</p>
+    </dialog>
+
+    <dialog id="gold-modal" class="membership-modal">
+        <div class="modal-header">
+            <h3>Gold Membership</h3>
+            <button type="button" class="close-modal" aria-label="Close">X</button>
+        </div>
+        <p><strong>Benefits include:</strong></p>
+        <ul>
+            <li>Listing in the member directory</li>
+            <li>Invitations to monthly networking events</li>
+            <li>Access to training workshops</li>
+            <li>Advertising in the chamber newsletter</li>
+            <li>Spotlight position on the home page</li>
+            <li>VIP seating and 30% discount on chamber events</li>
+        </ul>
+        <p><strong>Cost:</strong> $30 per month</p>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-contact">
+        <p><strong>Santa Cruz Chamber of Commerce</strong></p>
+        <p>123 Main Street</p>
+        <p>Santa Cruz, Bolivia</p>
+        <p>info@santacruzchamber.com</p>
+        <p>(831) 555-5555</p>
+    </div>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn profile" target="_blank" rel="noopener">
+          <img src="images/icon-linkedin.svg" alt="LinkedIn icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com" aria-label="GitHub profile" target="_blank" rel="noopener">
+          <img src="images/icon-github.svg" alt="GitHub icon" width="24" height="24">
+        </a>
+      </li>
+      <li>
+        <a href="https://x.com" aria-label="X profile" target="_blank" rel="noopener">
+          <img src="images/icon-x.svg" alt="X (formerly Twitter) icon" width="24" height="24">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-meta">
+        <p>WDD 231 Class Project</p>
+        <p>Diego Rivera, Santa Cruz, Bolivia</p>
+        <p class="copyright">&copy; <span id="currentyear"></span> Santa Cruz Chamber of Commerce</p>
+        <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
