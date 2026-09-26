@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chamber of Commerce - Thank You</title>
-  <meta name="description" content="Thank you for applying to the Santa Cruz Chamber of Commerce. Review the membership application details you submitted.">
+  <meta name="description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses and organizations in Santa Cruz, Bolivia.">
   <meta name="author" content="Diego Rivera">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="Santa Cruz Chamber of Commerce – Thank You">
-  <meta property="og:description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta property="og:description" content="Join the Santa Cruz Chamber of Commerce! Discover new opportunities for your business and connect with local businesses in Santa Cruz, Bolivia.">
   <meta property="og:image" content="https://drivmont.github.io/wdd231/chamber/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -39,7 +39,7 @@
     </button>
     <nav class="primary-nav" id="primaryNav">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html" >Directory</a></li>
         <li><a href="join.html">Join</a></li>
@@ -53,25 +53,16 @@
   <main>
     <h1>Thank You for Applying!</h1>
     <section class="thankyou-info">
-        <p>We appreciate your interest in the Santa Cruz Chamber of Commerce. Our membership team will review your application and contact you within two business days.</p>
-        <div class="results-card">
-            <h2>Your Application Summary</h2>
-            <dl id="results">
-                <dt>First name</dt>
-                <dd data-field="firstName"></dd>
-                <dt>Last name</dt>
-                <dd data-field="lastName"></dd>
-                <dt>Email</dt>
-                <dd data-field="email"></dd>
-                <dt>Mobile phone</dt>
-                <dd data-field="phone"></dd>
-                <dt>Business name</dt>
-                <dd data-field="business"></dd>
-                <dt>Application date</dt>
-                <dd data-field="timestamp"></dd>
-            </dl>
-        </div>
-        <p class="thankyou-links"><a href="index.html">Return to the home page</a> or <a href="directory.html">browse the member directory</a>.</p>
+        <p>We received your membership application. Here is a summary of what you submitted:</p>
+        <ul id="results">
+            <li>First name: <span data-field="firstName"></span></li>
+            <li>Last name: <span data-field="lastName"></span></li>
+            <li>Email: <span data-field="email"></span></li>
+            <li>Mobile phone: <span data-field="phone"></span></li>
+            <li>Business name: <span data-field="business"></span></li>
+            <li>Submitted on: <span data-field="timestamp"></span></li>
+        </ul>
+        <p><a href="index.html">Return to the home page</a></p>
     </section>
   </main>
 
