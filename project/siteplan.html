@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuralLink Site Plan | WDD 231 Final Project</title>
+  <meta name="description" content="Site plan for RuralLink, a guide to rural broadband technologies: name, purpose, scenarios, color scheme, typography, and wireframes.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>RuralLink Site Plan</h1>
+    <p>WDD 231 Final Project Planning Document</p>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>RuralLink: A Guide to Rural Broadband</strong></p>
+      <ul>
+        <li>The name joins "rural" and "link." It describes the site's goal of connecting rural families and small businesses with the internet technologies that can reach them. "Link" is also a networking term for a connection between two points, such as a microwave or fiber link.</li>
+        <li>Optional domain: <span class="domain">rurallink-guide.org</span></li>
+      </ul>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>RuralLink is an information hub for people in rural areas who want to understand their internet options. The site will:</p>
+      <ul>
+        <li>Explain the rural digital divide and how internet service reaches homes that are far from town.</li>
+        <li>Provide a Technology Explorer that lists fiber, fixed wireless (CBRS), microwave, satellite, cellular, and other broadband technologies. Each one shows its typical speed, range, latency, and best use case, and visitors can filter the list and open details.</li>
+        <li>Offer a "Check Service" request form where visitors describe their location and needs so they can receive guidance on the best option.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>I live on a ranch 15 miles from town. What kind of internet service can actually reach my home?</li>
+        <li>What is the difference between fixed wireless and satellite internet in speed and latency?</li>
+        <li>Which technology is best for a small business that needs video calls and cloud applications?</li>
+        <li>How can I ask for help finding out which service is available at my address?</li>
+      </ul>
+    </section>
+
+    <section id="color-scheme">
+      <h2>Color Scheme</h2>
+      <p>The colors are inspired by telecom infrastructure: a night sky, signal teal, and the amber of a tower beacon light. All text and background pairs meet WCAG AA contrast.</p>
+      <ul class="swatches">
+        <li>
+          <div class="chip chip-navy">#0B2545</div>
+          <p><strong>Primary, Navy:</strong> header, footer, navigation bar background, and h2 headings.</p>
+        </li>
+        <li>
+          <div class="chip chip-teal">#0E6E77</div>
+          <p><strong>Secondary, Signal Teal:</strong> buttons, links, h3 headings, card borders, and the active navigation link.</p>
+        </li>
+        <li>
+          <div class="chip chip-amber">#F29E4C</div>
+          <p><strong>Accent, Beacon Amber:</strong> hover and focus states, header border, and highlights on dark backgrounds only.</p>
+        </li>
+        <li>
+          <div class="chip chip-light">#F4F7F9</div>
+          <p><strong>Background, Light Gray:</strong> page background behind content cards.</p>
+        </li>
+        <li>
+          <div class="chip chip-text">#1F2933</div>
+          <p><strong>Text, Charcoal:</strong> paragraphs and body text.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <h3>Montserrat (Google Fonts)</h3>
+      <p>Used for the site name, headings (h1–h3), navigation links, and buttons. It is a strong, modern sans-serif that looks technical and clear.</p>
+      <div class="font-sample">
+        <p class="sample-heading">Connecting Rural Communities</p>
+      </div>
+      <h3>Open Sans (Google Fonts)</h3>
+      <p>Used for paragraphs, card details, form labels, and the footer. It is highly readable at small sizes on mobile screens.</p>
+      <div class="font-sample">
+        <p class="sample-body">Fixed wireless uses a radio link from a nearby tower to an antenna on your home, delivering broadband where fiber is not yet available.</p>
+      </div>
+    </section>
+
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>Home page layout for small (mobile) and large (desktop) viewports.</p>
+      <div class="wireframes">
+        <figure>
+          <img src="images/wireframe-sm.webp" alt="Mobile wireframe of the RuralLink home page with a hamburger menu, hero image, stacked content cards, and footer" width="229" height="391" loading="lazy">
+          <figcaption>Small view (mobile)</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wireframe-lg.webp" alt="Desktop wireframe of the RuralLink home page with horizontal navigation, full-width hero, three-column content cards, and footer" width="325" height="218" loading="lazy">
+          <figcaption>Large view (desktop)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Diego Rivera | WDD 231 | BYU–Idaho</p>
+  </footer>
+</body>
+</html>
