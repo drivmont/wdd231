@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chamber of Commerce - Home</title>
-  <meta name="description" content="Welcome to the Santa Cruz Chamber of Commerce! Discover local businesses and organizations in Santa Cruz, Bolivia.">
+  <title>Chamber of Commerce - Discover</title>
+  <meta name="description" content="Discover Santa Cruz de la Sierra, Bolivia: eight places to visit, plus facts about the city for prospective chamber members and visitors.">
   <meta name="author" content="Diego Rivera">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Santa Cruz Chamber of Commerce – Home Page">
-  <meta property="og:description" content="Welcome to the Santa Cruz Chamber of Commerce! Discover local businesses and organizations in Santa Cruz, Bolivia.">
+  <meta property="og:title" content="Santa Cruz Chamber of Commerce – Discover Santa Cruz">
+  <meta property="og:description" content="Explore the plazas, parks, museums and markets that make Santa Cruz de la Sierra, Bolivia, a great place to live, work and visit.">
   <meta property="og:image" content="https://drivmont.github.io/wdd231/chamber/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/index.html">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/chamber/discover.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 700px)">
 
   <script src="scripts/script.js" defer></script>
+  <script type="module" src="scripts/discover.mjs"></script>
 </head>
 <body>
 
@@ -39,9 +40,9 @@
     </button>
     <nav class="primary-nav" id="primaryNav">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
         <li class="future-link"><span>About</span></li>
         <li class="future-link"><span>Podcast</span></li>
@@ -51,43 +52,26 @@
   </header>
 
   <main>
-    <h1>Santa Cruz Chamber of Commerce</h1>
-    <section class="hero">
-        <img src="images/hero-santa-cruz.jpg" alt="Santa Cruz Chamber of Commerce building" class="hero-image" width="1024" height="576">
-        <a href="join.html" class="hero-cta">Join the Chamber</a>
-    </section>
-    <section class="events" aria-labelledby="events-heading">
-        <h2 id="events-heading">Current Events</h2>
-        <ul class="event-list">
-            <li class="event-card">
-                <h3>Annual Business Expo</h3>
-                <p>Date: July 15, 2024</p>
-                <p>Location: Santa Cruz Convention Center</p>
-                <p>Join us for our annual business expo featuring local businesses, networking opportunities, and keynote speakers.</p>
-            </li>
-            <li class="event-card">
-                <h3>Networking Breakfast</h3>
-                <p>Date: August 10, 2024</p>
-                <p>Location: Downtown Cafe</p>
-                <p>Start your day with a networking breakfast and connect with fellow chamber members and local business leaders.</p>
-            </li>
-        </ul>
-    </section>
-    <section class="weather" aria-labelledby="weather-heading">
-        <h2 id="weather-heading">Weather</h2>
+    <h1>Discover Santa Cruz</h1>
 
-        <div class="weather-current">
-            <p class="weather-temp" id="currentTemp"></p>
-            <p class="weather-desc" id="currentDesc"></p>
-        </div>
+    <aside class="visit-message" id="visitMessage" aria-live="polite">
+      <p id="visitText"></p>
+      <button type="button" id="closeVisit" aria-label="Close message">&times;</button>
+    </aside>
 
-        <ul class="weather-forecast" id="forecastList">
+    <div class="discover-gallery" id="discoverGallery">
+      <section class="discover-glance" aria-labelledby="glance-heading">
+        <h2 id="glance-heading">Santa Cruz at a Glance</h2>
+        <ul>
+          <li><strong>Founded:</strong> 1561 by Spanish explorer Ñuflo de Chávez</li>
+          <li><strong>Population:</strong> Bolivia's most populous city</li>
+          <li><strong>Elevation:</strong> about 416 m (1,365 ft)</li>
+          <li><strong>Climate:</strong> warm and tropical, averaging about 24 °C</li>
+          <li><strong>Economy:</strong> agribusiness, energy, commerce and services</li>
+          <li><strong>Region:</strong> capital of Santa Cruz, Bolivia's largest department</li>
         </ul>
-    </section>
-    <section class="spotlights" aria-labelledby="spotlights-heading">
-        <h2 id="spotlights-heading">Member Spotlights</h2>
-        <ul class="spotlight-list" id="spotlightList"></ul>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
