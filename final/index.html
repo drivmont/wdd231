@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuralLink | Rural Broadband Guide</title>
+  <meta name="description" content="RuralLink helps rural families and small businesses understand fiber, fixed wireless, satellite, and cellular internet options and find the right service.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RuralLink | Rural Broadband Guide">
+  <meta property="og:description" content="Understand your rural internet options: fiber, fixed wireless, satellite, and cellular broadband explained.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/final/images/hero-tower.webp">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/final/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 640px)">
+
+  <script type="module" src="scripts/nav.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="branding">
+      <img src="images/favicon.svg" alt="" width="40" height="40">
+      <span>RuralLink</span>
+    </a>
+    <button id="menu-button" class="menu-button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="service.html">Check Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero-tower.webp" alt="Two telecommunication towers with microwave dishes against a sunset sky" width="860" height="286" fetchpriority="high">
+      <div class="hero-content">
+        <h1>Connecting Rural Communities</h1>
+        <p>Reliable internet is possible far from town. Learn which technology can reach your home or business.</p>
+        <a href="service.html" class="button">Check Service</a>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>Why Rural Broadband Matters</h2>
+      <p>Millions of rural households still lack internet that is fast enough for remote work, online school, and telehealth. Long distances, low population density, and rough terrain make it expensive to run cable to every home. The good news is that several technologies can close that gap, and choosing the right one starts with understanding how each works.</p>
+    </section>
+
+    <section class="highlights" aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Three Ways Internet Reaches Rural Homes</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Fiber</h3>
+          <p>Glass strands carry light from the provider to your home. Fiber offers the highest speeds and lowest latency, but it is costly to build over long rural distances.</p>
+        </article>
+        <article class="card">
+          <h3>Fixed Wireless</h3>
+          <p>A radio link connects an antenna on your home to a nearby tower. CBRS fixed wireless can deliver fiber-like speeds within a few miles, often with no trenching required.</p>
+        </article>
+        <article class="card">
+          <h3>Satellite</h3>
+          <p>A dish talks to satellites in orbit, so service is available almost anywhere. Low-Earth-orbit systems have greatly reduced latency compared with older satellites.</p>
+        </article>
+      </div>
+      <a href="explorer.html" class="button">Explore All Technologies</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> RuralLink | Diego Rivera | WDD 231 Final Project</p>
+    <p>
+      <a href="https://youtu.be/9bXowHpt1d0">Project Video</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="siteplan.html">Site Plan</a>
+    </p>
+  </footer>
+</body>
+</html>

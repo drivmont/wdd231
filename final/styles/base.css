@@ -1,0 +1,321 @@
+/* RuralLink base styles (mobile first) */
+:root {
+  --navy: #0B2545;
+  --teal: #0E6E77;
+  --amber: #F29E4C;
+  --light: #F4F7F9;
+  --text: #1F2933;
+  --white: #FFFFFF;
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --body-font: "Open Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  line-height: 1.25;
+  color: var(--navy);
+}
+
+a {
+  color: var(--teal);
+}
+
+/* ---------- Header and navigation ---------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--navy);
+  border-bottom: 4px solid var(--amber);
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu-button {
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 6px;
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+}
+
+.primary-nav {
+  display: none;
+  width: 100%;
+}
+
+.primary-nav.open {
+  display: block;
+}
+
+.primary-nav ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-decoration: none;
+  border-top: 1px solid var(--teal);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+  color: var(--amber);
+}
+
+.primary-nav a.active {
+  color: var(--amber);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Main ---------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main > section {
+  padding: 1.5rem 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  background-color: var(--teal);
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--amber);
+  color: var(--navy);
+}
+
+/* ---------- Home: hero ---------- */
+.hero {
+  padding: 0;
+  background-color: var(--navy);
+}
+
+.hero-content {
+  padding: 1.5rem 1rem;
+  color: var(--white);
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+/* ---------- Home: cards ---------- */
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: var(--white);
+  border-top: 5px solid var(--teal);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(11, 37, 69, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--teal);
+}
+
+/* ---------- Shared helpers ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background-color: var(--light);
+  color: var(--navy);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tech-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 0.75rem;
+  margin: 0 0 1rem;
+}
+
+.tech-details dt {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.tech-details dd {
+  margin: 0;
+}
+
+/* ---------- Explorer ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+}
+
+.filter-bar label {
+  font-weight: 600;
+}
+
+.filter-bar select {
+  padding: 0.5rem;
+  border: 2px solid var(--teal);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.filter-bar p {
+  width: 100%;
+  margin: 0;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-top: 5px solid var(--teal);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 6px rgba(11, 37, 69, 0.12);
+}
+
+.tech-card .badge {
+  align-self: flex-start;
+}
+
+.tech-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tech-card .button {
+  margin-top: auto;
+  align-self: flex-start;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+/* ---------- Modal dialog ---------- */
+dialog {
+  width: min(600px, 92vw);
+  max-height: 85vh;
+  padding: 1.5rem;
+  border: none;
+  border-top: 6px solid var(--amber);
+  border-radius: 8px;
+}
+
+dialog::backdrop {
+  background-color: rgba(11, 37, 69, 0.75);
+}
+
+dialog h2 {
+  margin: 0 2rem 0.5rem 0;
+}
+
+.dialog-close {
+  float: right;
+  background: none;
+  border: none;
+  color: var(--navy);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 1.5rem 1rem;
+  background-color: var(--navy);
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.25rem 0;
+}
+
+.site-footer a {
+  color: var(--amber);
+}
