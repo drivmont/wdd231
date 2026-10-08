@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Service | RuralLink</title>
+  <meta name="description" content="Request a free rural internet service check. Share your ZIP code and needs, and RuralLink will recommend the best broadband option for your location.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Check Service | RuralLink">
+  <meta property="og:description" content="Request a free rural internet service recommendation.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/final/images/hero-sunset.webp">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/final/service.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/form.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="branding">
+      <img src="images/favicon.svg" alt="RuralLink logo: a tower sending signal waves" width="40" height="40">
+      <span>RuralLink</span>
+    </a>
+    <button id="menu-button" class="menu-button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="service.html" class="active" aria-current="page">Check Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Check Service</h1>
+      <p>Tell us where you live and how you use the internet. We will review the options that can reach your location and send you a recommendation.</p>
+    </section>
+
+    <div class="form-layout">
+      <form action="thanks.html" method="get" class="service-form">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="lastName" autocomplete="family-name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Location and Needs</legend>
+          <label for="zip">ZIP code</label>
+          <input type="text" id="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" title="Enter a 5-digit ZIP code" autocomplete="postal-code" required>
+
+          <label for="current">Current internet service</label>
+          <select id="current" name="current" required>
+            <option value="">Choose one</option>
+            <option value="None">No internet service</option>
+            <option value="DSL">DSL (phone line)</option>
+            <option value="Satellite">Satellite</option>
+            <option value="Cellular">Cellular hotspot or 4G/5G</option>
+            <option value="Fixed Wireless">Fixed wireless</option>
+            <option value="Cable or Fiber">Cable or fiber</option>
+          </select>
+
+          <label for="usage">How will you use the internet?</label>
+          <select id="usage" name="usage" required>
+            <option value="">Choose one</option>
+            <option value="Basic browsing and email">Basic browsing and email</option>
+            <option value="Streaming and online school">Streaming and online school</option>
+            <option value="Remote work and video calls">Remote work and video calls</option>
+            <option value="Small business">Small business</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred technology</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="preference" value="No preference" checked> No preference</label>
+            <label><input type="radio" name="preference" value="Fiber"> Fiber</label>
+            <label><input type="radio" name="preference" value="Fixed Wireless"> Fixed wireless</label>
+            <label><input type="radio" name="preference" value="Satellite"> Satellite</label>
+          </div>
+        </fieldset>
+
+        <label for="comments">Anything else we should know? <span class="optional">(optional)</span></label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Example: trees block the view to the south"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit" class="button">Submit Request</button>
+      </form>
+
+      <aside class="info-box">
+        <h2>What Happens Next</h2>
+        <ol>
+          <li>We compare your location with nearby fiber routes, towers, and satellite coverage.</li>
+          <li>We match the options to how you use the internet.</li>
+          <li>You receive an email with our recommendation within three business days.</li>
+        </ol>
+        <p>Want to learn first? Visit the <a href="explorer.html">Technology Explorer</a> to compare every option.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 RuralLink | Diego Rivera | WDD 231 Final Project</p>
+    <p>
+      <a href="https://youtu.be/9bXowHpt1d0">Project Video</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="siteplan.html">Site Plan</a>
+    </p>
+  </footer>
+</body>
+</html>

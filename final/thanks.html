@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Received | RuralLink</title>
+  <meta name="description" content="Confirmation of your RuralLink service check request with a summary of the information you submitted.">
+  <meta name="author" content="Diego Rivera">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Request Received | RuralLink">
+  <meta property="og:description" content="Your RuralLink service check request was received.">
+  <meta property="og:image" content="https://drivmont.github.io/wdd231/final/images/hero-sunset.webp">
+  <meta property="og:url" content="https://drivmont.github.io/wdd231/final/thanks.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/thanks.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="branding">
+      <img src="images/favicon.svg" alt="RuralLink logo: a tower sending signal waves" width="40" height="40">
+      <span>RuralLink</span>
+    </a>
+    <button id="menu-button" class="menu-button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+      <span aria-hidden="true">&#9776;</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explorer.html">Explorer</a></li>
+        <li><a href="service.html">Check Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <h1>Thank You!</h1>
+      <p>We received your service request. Here is a summary of what you sent us.</p>
+      <dl id="results" class="tech-details summary"></dl>
+      <a href="index.html" class="button">Back to Home</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 RuralLink | Diego Rivera | WDD 231 Final Project</p>
+    <p>
+      <a href="https://youtu.be/9bXowHpt1d0">Project Video</a> |
+      <a href="attributions.html">Attributions</a> |
+      <a href="siteplan.html">Site Plan</a>
+    </p>
+  </footer>
+</body>
+</html>
