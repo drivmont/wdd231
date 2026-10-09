@@ -1,0 +1,11 @@
+/* Site plan: larger screens */
+@media (min-width: 700px) {
+  .plan-title h1 {
+    font-size: 2.25rem;
+  }
+
+  .wireframes {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+}
